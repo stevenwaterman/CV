@@ -60,9 +60,9 @@
 				\begin{center}
 					\begin{tikzpicture}
 						\color{black}
-						\node[circle,draw,inner sep=40pt,fill overzoom image=frog] (A) {};
+						\node[circle,draw,inner sep=40pt,fill overzoom image=picture2] (A) {};
 					\end{tikzpicture}\\
-					\vspace{4pt}
+					\vspace{12pt}
 					\textbf{
 						\LARGE Steven Lowes
 					}
@@ -148,6 +148,13 @@
 			\vspace{4pt}
 			\begin{tikzpicture}
 				\fill [skillBackground] (0,0) rectangle(6.8,.5);
+				\fill [skillForeground] (0,0) rectangle(4.08,.5);
+				\node [anchor=west] at (.1,0.25) {\textbf{Python}};
+			\end{tikzpicture}
+			
+			\vspace{4pt}
+			\begin{tikzpicture}
+				\fill [skillBackground] (0,0) rectangle(6.8,.5);
 				\fill [skillForeground] (0,0) rectangle(2.72,.5);
 				\node [anchor=west] at (.1,0.25) {\textbf{Unit Testing}};
 			\end{tikzpicture}
@@ -166,7 +173,7 @@
 				\node [anchor=west] at (.1,0.25) {\textbf{Jira}};
 			\end{tikzpicture}
 			
-			\vspace{20pt}
+			\vspace{5pt}
 			\end{center}
 		\end{minipage}
 	}
@@ -271,7 +278,7 @@
 		\vspace{-12pt}
 		\textbf{Plan For Probate Web Portal} (May 2017)
 		
-		Plan For Probate's internal web portal. Tracks clients, and tasks currently in progress. Allows for file upload and storage for important documents. Secured using Google Login, and Database encrypted to comply with GDPR. Currently used by the company to store and manage all ongoing tasks and client information.
+		Plan For Probate's internal web portal. Tracks clients, and tasks currently in progress. Allows for file upload and storage for important documents. Secured using Google Login, and Database encrypted to comply with GDPR. Currently used by the company to store and manage all ongoing tasks and client information. Previously, the owners were using index cards to track their clients. The web portal significantly decreased the number of errors and missed appointments.
 		
 		\textbf{Technologies Used:} Java, SQL (MySQL), JSP, Bootstrap, Javascript, Google Cloud Services
 		
@@ -279,7 +286,7 @@
 			\includegraphics[width=0.9\linewidth]{backtest.png}
 		\end{center}
 		\vspace{-12pt}
-		\textbf{Hospital Patient Information Portal} (In Progress)
+		\textbf{Patient Information Portal} (In Progress)
 		
 		University Assignment. Focussed on creating GUIs following principles of Human-Computer Interaction. Used the opportunity to learn JavaFX where previously I was only using Swing. Backed by a remote MySQL Database and a DAO layer.
 		
@@ -305,7 +312,7 @@
 		\vspace{-12pt}
 		\textbf{Autocall Backtester} (March 2016)
 		
-		Tests a specific type of financial product to see how it would have performed historically. This tool allowed the analysis to be performed where previously it was too time consuming. The graphs produced are used in the official product literature and online. The tool also informed the creation of new products, where backtesting revealed them to perform worse than expected.
+		Created for Lowes Financial Management. Tests a financial product to see how it would have performed historically. This tool allowed the analysis to be performed where previously it was too time consuming. The graphs produced are used in the official product literature and online. The tool also informed the creation of new products, where backtesting revealed them to perform worse than expected.
 		
 		\textbf{Technologies Used:} Java, Excel
 	\end{minipage}
