@@ -6,7 +6,7 @@
 \usepackage[none]{hyphenat}%Remove hyphenation
 \usepackage{enumitem}%to set gaps in itemize
 \usepackage{fontawesome}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{blindtext}
 \usepackage{xcolor}
 \usepackage{afterpage}
@@ -29,11 +29,6 @@
 %Right-aligned tabularx
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
-%Change gap between columns on 2nd page
-%\setlength{\columnsep}{1.5cm}
-%Add line between columns
-%\setlength{\columnseprule}{0.2pt}
-
 %No page numbering
 \pagenumbering{gobble}
 
@@ -42,6 +37,7 @@
 \newenvironment{bullets}{\begin{minipage}[t]{\linewidth}\begin{itemize}[leftmargin=2em,label=-,nosep]}{\end{itemize}\end{minipage}\vspace{5pt}}
 
 \newenvironment{sectionitem}{\vspace{6pt}\noindent\tabularx{\linewidth}{p{70pt}X}}{\endtabularx}
+
 
 \newcommand{\sectionheader}[1]{
 	\vspace{6pt}
@@ -52,7 +48,6 @@
 		\Large\textbf{#1}}}
 
 \begin{document}
-	
 		\noindent\fcolorbox{sidebarColor}{sidebarColor}{%
 			\color{white}
 			\begin{minipage}{\dimexpr0.35\textwidth-2\fboxrule-2\fboxsep\relax}
@@ -60,7 +55,7 @@
 				\begin{center}
 					\begin{tikzpicture}
 						\color{black}
-						\node[circle,draw,inner sep=40pt,fill overzoom image=picture2] (A) {};
+						\node[circle,draw,inner sep=40pt,fill overzoom image=picture] (A) {};
 					\end{tikzpicture}\\
 					\vspace{12pt}
 					\textbf{
@@ -69,11 +64,12 @@
 				\vspace{8pt}
 				
 				\begin{tabular}{rc}
-					\href{https://www.google.co.uk/maps/@54.7826438,-1.5587381,18z}{95 Wakenshaw Road, DH1 1EP} & \href{https://www.google.co.uk/maps/@54.7826438,-1.5587381,18z}{\faHome}\\
+					\href{https://www.google.co.uk/maps/@54.7840735,-1.5497025,14z}{Gilesgate, Durham} & \href{https://www.google.co.uk/maps/@54.7840735,-1.5497025,14z}{\faHome}\\
 					\href{mailto:stevenhlowes@gmail.com}{stevenhlowes@gmail.com} & \href{mailto:stevenhlowes@gmail.com}{\faEnvelope}\\
 					0737 843 8686 & \faPhone \\
-					\href{https://www.linkedin.com/in/steven-lowes-34200a13a/}{steven-lowes-34200a13a} & \href{https://www.linkedin.com/in/steven-lowes-34200a13a/}{\faLinkedin} \\
+					\href{https://www.linkedin.com/in/steven-lowes/}{steven-lowes} & \href{https://www.linkedin.com/in/steven-lowes/}{\faLinkedin} \\
 					\href{https://github.com/motherlymuppet}{motherlymuppet} & \href{https://github.com/motherlymuppet}{\faGithub} \\
+					\href{http://www.stevenlowes.com}{stevenlowes.com} & \href{http://www.stevenlowes.com}{\faLink} \\
 				\end{tabular} \\
 			
 			\vspace{12pt}
@@ -83,7 +79,7 @@
 		
 				\vspace{8pt}
 				\begin{minipage}{0.9\linewidth}
-					Second year Computer Science student at Durham University. Excellent problem solver, willing to take time to ensure a solution is optimal. Self-directed and efficient, able to learn new technologies quickly. Proficient public speaker with good communication in teams.
+					Second year Computer Science student at Durham University. Excellent problem solver, willing to take time to ensure a solution is optimal. Self-directed and efficient, able to learn new technologies quickly. Proficient public speaker with great communication in teams.
 				
 					\vspace{8pt}
 					
@@ -166,14 +162,7 @@
 				\node [anchor=west] at (.1,0.25) {\textbf{Agile}};
 			\end{tikzpicture}
 			
-			\vspace{4pt}
-			\begin{tikzpicture}
-				\fill [skillBackground] (0,0) rectangle(6.8,.5);
-				\fill [skillForeground] (0,0) rectangle(1.36,.5);
-				\node [anchor=west] at (.1,0.25) {\textbf{Jira}};
-			\end{tikzpicture}
-			
-			\vspace{5pt}
+			\vspace{15pt}
 			\end{center}
 		\end{minipage}
 	}
@@ -195,14 +184,14 @@
 			\emph{Durham}&\href{https://www.dur.ac.uk/courses/info/?id=11558\&title=General+Engineering\&code=H100\&type=MENG\&year=2015}{MEng General Engineering}\\
 			&\begin{bullets}
 				\smitem{Year 1: 2:2 Equivalent}
-				\smitem{Module - \emph{Introduction to Programming}: \textbf{89\%}}
+				\smitem{Module - \href{https://www.dur.ac.uk/faculty.handbook/module_description/?module_code=COMP1011}{\emph{Introduction to Programming}: \textbf{89\%}}}
 			\end{bullets}\\
 			&Switched to the Computer Science Degree after discovering my love for programming\\
 		\end{sectionitem}
 		
 		\begin{sectionitem}
 			2013 --- 2015&\textbf{\href{http://www.parkviewlearning.net/post-16-education/sixth-form/}{Park View Sixth Form}}\\
-			\emph{Durham}&A-Level Grades:\\
+			\emph{Co. Durham}&A-Level Grades:\\
 			&\begin{bullets}
 				\smitem{Business Studies - A*}
 				\smitem{Maths - A}
@@ -212,7 +201,7 @@
 		
 		\begin{sectionitem}
 			2008 --- 2013&\textbf{\href{http://www.parkviewlearning.net/}{Park View School}}\\
-			\emph{Durham}&GCSE Grades:\\
+			\emph{Co. Durham}&GCSE Grades:\\
 			&\begin{minipage}[t]{\linewidth}\begin{multicols}{4}\begin{description}[nosep]
 						\item 3 $\times$ A*
 						\item 6 $\times$ A
@@ -227,8 +216,8 @@
 		
 		\begin{sectionitem}
 			March ---&\textbf{Full Stack Developer}\\
-			May 2017&Plan for Probate (North) Ltd.\\
-			&\begin{bullets}
+			May 2017&\href{http://planforprobate.com/}{Plan for Probate (North) Ltd.}\\
+			\emph{Co. Durham}&\begin{bullets}
 				\smitem{Developed an online portal to store client information and track payments}
 				\smitem{Employed Agile methodologies to keep the owners updated and work to the evolving requirements}
 				\smitem{Technologies Used: Java, JSP, Bootstrap, SQL, Javascript, Google Cloud Services}
@@ -237,8 +226,8 @@
 		
 		\begin{sectionitem}
 			July ---&\textbf{Java Desktop Application Programmer}\\
-			Oct 2016&E. Hall Tripe \& Poultry Ltd.\\
-			&\begin{bullets}
+			Oct 2016&\href{https://www.facebook.com/tripefactory.sunderland/}{E. Hall Tripe \& Poultry Ltd.}\\
+			\emph{Sunderland}&\begin{bullets}
 				\smitem{Worked from a brief to develop a logistics system for the factory}
 				\smitem{The program tracked orders and repeat orders, creating lists of products for the delivery drivers}
 				\smitem{The program organised routing for the deliveries, which was previously done by hand}
@@ -249,7 +238,7 @@
 		\begin{sectionitem}
 			2013 ---&\textbf{Desktop Application Developer}\\
 			Present&\href{http://www.lowes.co.uk}{Lowes Financial Management}\\
-			&\begin{bullets}
+			\emph{Newcastle}&\begin{bullets}
 				\smitem{Created and maintained various tools which analyse financial products}
 				\smitem{The tools produce graphs and data which are used in literature distributed to clients and have been published in online articles by Lowes}
 				\smitem{Technologies Used: Java, SQL, Excel, VBA}
@@ -259,7 +248,7 @@
 		\sectionheader{Student Groups}
 		\vspace{4pt}
 		
-		President of Code Wars society. Involved in DU Robot Wars team. Actively involved with ShellShock! Improvised Comedy. Elected to sit on societies committee which governs other student groups. Elected as Course Rep and Co-Chair of the Student-Staff Committee.
+		President of Code Wars society. Involved in DU Robot Wars team. Actively involved with \href{http://community.dur.ac.uk/dur.improv/}{ShellShock! Improvised Comedy}. Elected to sit on Societies Committee which governs other student groups. Elected as Course Rep and Co-Chair of the Student-Staff Committee.
 	\end{minipage}
 
 	\newpage
@@ -278,17 +267,17 @@
 		\vspace{-12pt}
 		\textbf{Plan For Probate Web Portal} (May 2017)
 		
-		Plan For Probate's internal web portal. Tracks clients, and tasks currently in progress. Allows for file upload and storage for important documents. Secured using Google Login, and Database encrypted to comply with GDPR. Currently used by the company to store and manage all ongoing tasks and client information. Previously, the owners were using index cards to track their clients. The web portal significantly decreased the number of errors and missed appointments.
+		Plan For Probate's internal web portal. Tracks clients, and tasks currently in progress. Allows for file upload and storage for important documents. Secured using Google Login, and Database encrypted to comply with GDPR. Used by the company to store and manage all ongoing tasks and client information. The web portal has replaced the previous system which used index cards to track their clients. The web portal significantly decreased the time spent on admin and numer of errors/missed appointments.
 		
-		\textbf{Technologies Used:} Java, SQL (MySQL), JSP, Bootstrap, Javascript, Google Cloud Services
+		\textbf{Technologies Used:} Java, SQL (MySQL), JSP, Bootstrap, Javascript, Google Cloud Platform
 		
 		\begin{center}
-			\includegraphics[width=0.9\linewidth]{backtest.png}
+			\includegraphics[width=0.9\linewidth]{sarahassignment.png}
 		\end{center}
 		\vspace{-12pt}
-		\textbf{Patient Information Portal} (In Progress)
+		\textbf{Patient Information Portal} (Feb 2018)
 		
-		University Assignment. Focussed on creating GUIs following principles of Human-Computer Interaction. Used the opportunity to learn JavaFX where previously I was only using Swing. Backed by a remote MySQL Database and a DAO layer.
+		University Assignment. Focussed on creating GUIs following principles of Human-Computer Interaction. Used the opportunity to learn JavaFX to replace Swing. Backed by a remote MySQL Database and a DAO layer. The mark for this assignment is still pending.
 		
 		\textbf{Technologies Used:} SQL (MySQL), Java, JavaFX
 		
@@ -312,7 +301,7 @@
 		\vspace{-12pt}
 		\textbf{Autocall Backtester} (March 2016)
 		
-		Created for Lowes Financial Management. Tests a financial product to see how it would have performed historically. This tool allowed the analysis to be performed where previously it was too time consuming. The graphs produced are used in the official product literature and online. The tool also informed the creation of new products, where backtesting revealed them to perform worse than expected.
+		Created for Lowes Financial Management. Tests a financial product to see how it would have performed historically. This tool allowed the analysis to be performed where previously it was too time consuming. The graphs produced are used in the official product literature and online. The tool also informed the creation of new products, where backtesting revealed them to perform better than expected.
 		
 		\textbf{Technologies Used:} Java, Excel
 	\end{minipage}
