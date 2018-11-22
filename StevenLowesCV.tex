@@ -12,6 +12,7 @@
 \usepackage{afterpage}
 \usepackage{tikz}
 \usepackage[skins]{tcolorbox}
+\usepackage{xcolor}
 
 \usepackage{multicol}
 
@@ -34,10 +35,13 @@
 
 \newcommand{\smitem}[1]{\item {\small {#1}}}
 
-\newenvironment{bullets}{\begin{minipage}[t]{\linewidth}\begin{itemize}[leftmargin=2em,label=-,nosep]}{\end{itemize}\end{minipage}\vspace{5pt}}
+\newenvironment{bullets}{\begin{minipage}[t]{\linewidth}\begin{itemize}[leftmargin=2em,label=-,nosep]}{\end{itemize}\end{minipage}\vspace{2pt}}
 
 \newenvironment{sectionitem}{\vspace{6pt}\noindent\tabularx{\linewidth}{p{70pt}X}}{\endtabularx}
 
+\newcommand{\tech}[1]{
+	\tcbox[skin=enhanced,nobeforeafter,colframe=black!20,size=fbox,height=15pt]{\footnotesize#1}
+}
 
 \newcommand{\sectionheader}[1]{
 	\vspace{6pt}
@@ -94,7 +98,7 @@
 					
 					\vspace{8pt}
 					
-					Extensive experience with Java/Kotlin and SQL. Happy to learn new technologies, and able to so quickly.
+					Extensive experience with Java/Kotlin and SQL. Able to quickly learn new technologies
 					
 					\vspace{8pt}
 					
@@ -108,12 +112,15 @@
 						\end{Large}
 					\end{center}
 					
-					Interested in startups and small software development teams with a flat hierarchy, located in the Durham/Newcastle area or full remote.
+					Startups and small software development teams with flat hierarchy, located in the Durham/Newcastle area or remote
 					
-					Areas of Interest include:
+					\vspace{8pt}
+					
+					\textbf{Areas of Interest include:}
+					
 					\vspace{8pt}
 				\end{minipage}
-			
+				
 				\begin{bullets}
 					\smitem{Automation (Home/Industrial)}
 					\smitem{FinTech}
@@ -126,25 +133,22 @@
 					\smitem{Developer Tools}
 					\smitem{Anything Novel or Unique}
 				\end{bullets}
-			\vspace{30pt}
+				\vspace{56pt}
 			\end{center}
 		\end{minipage}
 	}
 	\hspace{0.02\textwidth}
-	\begin{minipage}{0.6\textwidth}
+	\begin{minipage}{0.58\textwidth}	
+		
 		\sectionheader{Education}
 		
 		\begin{sectionitem}
 			2016 --- 2019&\textbf{\href{https://www.dur.ac.uk/}{Durham University}} (\href{https://www.dur.ac.uk/trevelyan.college/}{Trevelyan College})\\
-			\emph{Durham}&\href{https://www.dur.ac.uk/courses/info/?id=11509\&title=Computer+Science\&code=G400\&type=BSC\&year=2016}{Bsc Computer Science}\\
+			\emph{Durham}&\href{https://www.dur.ac.uk/courses/info/?id=11509\&title=Computer+Science\&code=G400\&type=BSC\&year=2016}{BSc Computer Science}\\
 			&\begin{bullets}
-				\smitem{Expected: 1st Class}
-			\end{bullets}
-		\end{sectionitem}
-		
-		\begin{sectionitem}
-			2015 --- 2016&\textbf{\href{https://www.dur.ac.uk/}{Durham University}} (\href{https://www.dur.ac.uk/trevelyan.college/}{Trevelyan College})\\
-			\emph{Durham}&\href{https://www.dur.ac.uk/courses/info/?id=11558\&title=General+Engineering\&code=H100\&type=MENG\&year=2015}{MEng General Engineering}\\
+				\smitem{Expected: 1st Class (Hons)}
+			\end{bullets}\\
+			2015 --- 2016&\href{https://www.dur.ac.uk/courses/info/?id=11558\&title=General+Engineering\&code=H100\&type=MENG\&year=2015}{MEng General Engineering}\\
 			&\begin{bullets}
 				\smitem{Year 1: 2:2 Equivalent}
 				\smitem{Module - \href{https://www.dur.ac.uk/faculty.handbook/module_description/?module_code=COMP1011}{\emph{Introduction to Programming}: \textbf{89\%}}\\Convinced me to switch course}
@@ -152,65 +156,88 @@
 		\end{sectionitem}
 		
 		\begin{sectionitem}
-			2013 --- 2015&\textbf{\href{http://www.parkviewlearning.net/post-16-education/sixth-form/}{Park View Sixth Form}}\\
-			\emph{Co. Durham}&A-Level Grades:\\
-			&\begin{bullets}
-				\smitem{Business - Distinction*}
-				\smitem{Maths - A}
-				\smitem{Physics - B}
-			\end{bullets}\\
+			2008 --- 2015&\textbf{\href{http://www.parkviewlearning.net/}{Park View School}}\\
+			\emph{Co. Durham}&\begin{tabularx}{250pt}{XX}
+				A-Levels:&GCSEs:\\
+			\end{tabularx}\\
+			&\begin{tabularx}{250pt}{XX}
+				\begin{bullets}
+					\smitem{Business - A*}
+					\smitem{Maths - A}
+					\smitem{Physics - B}
+				\end{bullets}&
+				\begin{bullets}
+					\smitem{3 $\times$ A*}
+					\smitem{7 $\times$ A}
+					\smitem{1 $\times$ B, C}
+				\end{bullets}\\
+			\end{tabularx}\\
 		\end{sectionitem}
-	
-		\begin{sectionitem}
-			2008 --- 2013&\textbf{\href{http://www.parkviewlearning.net}{Park View School}}\\
-			\emph{Co. Durham}&GCSE Grades: 3 A*, 6 A, 1 Distinction, 1 B, 1 C\\
-		\end{sectionitem}
+		
+		\vspace{-12pt}
 		
 		\sectionheader{Work}
 		
 		\begin{sectionitem}
-			%TODO Condeco
-			July ---&\textbf{Junior Software Engineer}\\
+			Oct 2018&\textbf{Lab Demonstrator}\\
+			--- Present& Durham University\\
+			\emph{Durham}& \begin{bullets}
+				\smitem{Ran sessions to support students' learning}
+				\smitem{Covering: Electronics, Machine Architecture, Operating Systems, Databases, Networks}
+			\end{bullets}\\
+		\end{sectionitem}
+	
+		\vspace{4pt}
+		
+		\begin{sectionitem}
+			July ---&\textbf{Junior Software Engineer (Internship)}\\
 			Oct 2018& \href{https://www.condecoconnect.com/}{Condeco Group Ltd.}\\
 			\emph{Newcastle}& \begin{bullets}
-				\smitem{Summer Internship working on Condeco Connect}
 				\smitem{Full-Stack web development with microservices}
+				\smitem{Focus on backend API development}
 				\smitem{Designed and pitched a new microservice}
-				\smitem{Technologies used: ASP.net Core, Typescript, Angular, Android, Azure, SQL, Powerscript}
 			\end{bullets}\\
+			&\tech{ASP.net Core} \tech{Typescript} \tech{Android} \tech{Azure} \tech{SQL}\\
 		\end{sectionitem}
 		
 		\begin{sectionitem}			
 			March ---&\textbf{Full Stack Developer}\\
 			May 2017&\href{http://planforprobate.com/}{Plan for Probate (North) Ltd.}\\
 			\emph{Co. Durham}&\begin{bullets}
-				\smitem{Contracted to develop an online customer resource management portal and track payments}
-				\smitem{Technologies Used: Java, JSP, Bootstrap, SQL, Javascript, Google Cloud Services}
+				\smitem{Developed an online CRM portal tracking payments and customer information}
+				\smitem{Employed an Agile framework to keep clients informed throughout the consulting process}
 			\end{bullets}\\
+			&\tech{Java} \tech{JSP} \tech{SQL} \tech{JS} \tech{Google Cloud Platform}\\
 		\end{sectionitem}
 		
 		\begin{sectionitem}
-			July ---&\textbf{Java Desktop Application Programmer}\\
+			July ---&\textbf{Java Programmer}\\
 			Oct 2016&\href{https://www.facebook.com/tripefactory.sunderland/}{E. Hall Tripe \& Poultry Ltd.}\\
 			\emph{Sunderland}&\begin{bullets}
-				\smitem{Developed a logistics system which creates packing lists for the drivers, and calculates delivery routes, which was previously done manually}
-				\smitem{Technologies Used: Java, Swing, SQL}
+				\smitem{Developed a logistics system which creates packing lists for the drivers, and calculates delivery routes, previously done manually}
 			\end{bullets}\\
+			&\tech{Java} \tech{Swing} \tech{SQL}\\
 		\end{sectionitem}
 		
 		\begin{sectionitem}
-			2013 ---&\textbf{Data Scientist}\\
+			2013 ---&\textbf{Data Analyst}\\
 			2017&\href{http://www.lowes.co.uk}{Lowes Financial Management}\\
 			\emph{Newcastle}&\begin{bullets}
 				\smitem{Created data analysis tools which produce data and graphs used in product brochures}
-				\smitem{Technologies Used: Java, SQL, Excel, VBA}
 			\end{bullets}\\
+			&\tech{Java} \tech{SQL} \tech{Excel} \tech{VBA}\\
 		\end{sectionitem}
 		
-		\sectionheader{Other Work}
+		\sectionheader{Stuff I'm Proud Of}
+		
 		\vspace{4pt}
 		
-		Actively involved with \href{http://community.dur.ac.uk/dur.improv/}{Improvised Comedy}, performing at Edinburgh Fringe in 2018. Elected as chair of Societies Committee to govern student groups, Course Rep and Co-Chair to represent Computer Science students, and Faculty Rep to represent all science undergrads. Frequently speak publicly and with officials about student issues. Active GitHub account, contributing to FOSS. Came 2\textsuperscript{nd} of 31 teams at \href{https://durhack.com/}{Durhack 2018}, and won the GitHub prize for best Dev Tool with \href{https://github.com/motherlymuppet/sharpshot}{SharpShot}, a 2d esoteric programming language.
+		\begin{bullets}
+			\smitem{Came 2\textsuperscript{nd} of 31 teams at \href{https://durhack.com/}{Durhack 2018}, and won the GitHub prize for best Dev Tool with \href{https://github.com/motherlymuppet/sharpshot}{SharpShot} (see portfolio)}
+			\smitem{Chair of the committee that governs extracurricular student groups}
+			\smitem{Represent over 4,000 students as Science Faculty Rep, speaking publicly and lobbying senior leadership regarding student issues}
+			\smitem{Actively involved with \href{http://community.dur.ac.uk/dur.improv/}{Shellshock! Improvised Comedy}, performing in a \href{https://tickets.edfringe.com/whats-on/here-be-improv}{sell-out show at Edinburgh Fringe in 2018}}
+		\end{bullets}
 	\end{minipage}
 	
 	\newpage
@@ -218,7 +245,7 @@
 	\vspace*{12pt}
 	
 	\begin{center}
-		\Huge Portfolio
+		\Huge \textbf{Portfolio}
 	\end{center}
 	
 	\hspace{0.02\textwidth}
@@ -228,9 +255,9 @@
 		\end{center}
 		\textbf{Plan For Probate Web Portal} (May 2017)
 		
-		Plan For Probate's internal web portal. Tracks clients, and tasks currently in progress. Allows for file upload and storage for important documents. Secured using Google Login, and Database encrypted to comply with GDPR. Used by the company to store and manage all ongoing tasks and client information. The web portal has replaced the previous system which used index cards to track their clients, decreasing the time spent on admin and numer of errors/missed appointments.
+		Plan For Probate's internal web portal. Tracks clients, and tasks currently in progress. Allows for file upload and storage for important documents. Secured using Google Login, and Database encrypted to comply with GDPR. Used by the company to store and manage all ongoing tasks and client information. The web portal has replaced the previous system which used index cards to track their clients, decreasing the time spent on admin and number of errors/missed appointments.
 		
-		\textbf{Technologies Used:} Java, SQL (MySQL), JSP, Bootstrap, Javascript, Google Cloud Platform
+		\tech{Java} \tech{SQL} \tech{JSP} \tech{Bootstrap} \tech{Javascript} \tech{Google Cloud Platform}
 		
 		\begin{center}
 			\href{https://github.com/motherlymuppet/sharpshot}{\includegraphics[width=0.9\linewidth]{sharpshot.png}}
@@ -238,9 +265,9 @@
 		\vspace{-12pt}
 		\href{https://github.com/motherlymuppet/sharpshot}{\textbf{SharpShot} (Oct 2018)}
 		
-		Created in 24 hours for \href{http://www.durhack.com}{Durhack 2018}. A visual, esoteric programming language where you place nodes on a grid. Each node represents a function, and parameters move around the screen destroying each other when they collide. SharpShot was the overall runner-up, out of 31 total projects, and won the GitHub prize for best Dev Tool.
+		Created in 24 hours for \href{http://www.durhack.com}{Durhack 2018}. A visual, esoteric programming language where you place nodes on a grid. Each node represents a function, and parameters move around the screen destroying each other when they collide. SharpShot was the overall runner-up from 31 total projects, and won the GitHub prize for best Dev Tool.
 		
-		\textbf{Technologies Used:} Java, Javafx
+		\tech{Java} \tech{Javafx}
 		
 	\end{minipage}
 	\hspace{0.06\textwidth}
@@ -254,7 +281,7 @@
 		
 		Created for Societies Committee, to show when rooms in the Students' Union were booked. Hosted in the cloud using a scraping API created in nodejs. Received very positive feedback from Student Groups, as previously there was no way to know which rooms were booked. Not yet in full release, but in use by a test group.
 		
-		\textbf{Technologies Used:} NodeJS, FullCalendar, Javascript, JQuery, RedHat Openshift
+		\tech{NodeJS} \tech{FullCalendar} \tech{Javascript} \tech{JQuery} \tech{RedHat Openshift}
 		
 		\begin{center}
 			\includegraphics[width=0.9\linewidth]{backtest.png}
@@ -264,7 +291,7 @@
 		
 		Created for Lowes Financial Management. Tests a financial product to see how it would have performed historically. This tool allowed the analysis to be performed where previously it was too time consuming. The graphs produced are used in the official product literature and online. The tool also informed the creation of new products, where backtesting revealed them to perform better than expected.
 		
-		\textbf{Technologies Used:} Java, Excel
+		\tech{Java} \tech{Excel} \tech{VBA}
 		
 	\end{minipage}
 	\hspace{0.02\textwidth}
