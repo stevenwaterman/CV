@@ -1,330 +1,186 @@
 \documentclass[hidelinks, 12pt, a4paper]{article}
 
-\usepackage{tabularx} %full-width tables
-\usepackage{moresize} %Huge and HUGE
-\usepackage[margin=0in]{geometry}%Margins
+\usepackage[margin=0.5in]{geometry}
+\usepackage[sfdefault,light]{roboto}
 \usepackage[none]{hyphenat}%Remove hyphenation
-\usepackage{enumitem}%to set gaps in itemize
 \usepackage{fontawesome}
 \usepackage{hyperref}
-\usepackage{blindtext}
-\usepackage{xcolor}
-\usepackage{afterpage}
+\usepackage{tabularx}
 \usepackage{tikz}
-\usepackage[skins]{tcolorbox}
-\usepackage{xcolor}
+\usepackage{graphbox}
 
-\usepackage{multicol}
-
-\usepackage[sfdefault,light]{roboto}
-
-%\cellwidth in tabularx size
-\makeatletter
-\newcommand\cellwidth{\TX@col@width}
-\makeatother
-
-\definecolor{sidebarColor}{HTML}{001C5E}
-\definecolor{skillBackground}{HTML}{98A0B2}
-\definecolor{skillForeground}{HTML}{EBA500}
-
-%Right-aligned tabularx
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+ \hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,
+	citecolor = black,      
+	urlcolor=blue,
+}
 
 %No page numbering
 \pagenumbering{gobble}
-
-\newcommand{\smitem}[1]{\item {\small {#1}}}
-
-\newenvironment{bullets}{\begin{minipage}[t]{\linewidth}\begin{itemize}[leftmargin=2em,label=-,nosep]}{\end{itemize}\end{minipage}\vspace{2pt}}
-
-\newenvironment{sectionitem}{\vspace{6pt}\noindent\tabularx{\linewidth}{p{70pt}X}}{\endtabularx}
-
-\newcommand{\tech}[1]{
-	\tcbox[skin=enhanced,nobeforeafter,colframe=black!20,size=fbox,height=15pt]{\footnotesize#1}
-}
-
-\newcommand{\darktech}[1]{
-	\tcbox[skin=enhanced,nobeforeafter,colback=black!10,colframe=black!30,size=fbox,height=15pt]{\footnotesize#1}
-}
-
-\newcommand{\sectionheader}[1]{
-	\vspace{6pt}
-	{
-		\noindent
-		\hspace{3pt}
-		%\fontfamily{lmr}\selectfont
-		\Large\textbf{#1}}}
+\setlength{\parindent}{0pt}
 
 \begin{document}
-	\noindent\fcolorbox{sidebarColor}{sidebarColor}{%
-		\color{white}
-		\begin{minipage}{\dimexpr0.35\textwidth-2\fboxrule-2\fboxsep\relax}
-			\vspace{4pt}
-			\begin{center}
-				\begin{tikzpicture}
-				\color{black}
-				\node[circle,draw,inner sep=40pt,fill overzoom image=picture] (A) {};
-				\end{tikzpicture}\\
-				
-				\vspace{12pt}
-				
-				\textbf{
-					\LARGE Steven Waterman
-				}
-				\vspace{8pt}
-				
+	\begin{tabular}{p{0.65\textwidth}p{0.35\textwidth}}
+		\begin{minipage}{\linewidth}
+			\begin{Huge}Steven Waterman\end{Huge}
+			
+			\hspace{24pt}\begin{large}Senior Developer at NHS BSA\end{large}\\
+			
+			I'm a track-proven generalist, able to quickly learn new tech or languages and work across many domains.\\
+			
+			I can follow best practices, but know I'll need to think outside the box to build reliable solutions when `best practice' is impossible.\\
+			
+			I'm always happy to spend my time helping others, because in the end it's the users that win --- that's what matters.\\
+			
+			I'm really ambitious and need to be challenged, flourishing in small teams of brilliant people who will push me to be a better developer.
+		\end{minipage} & \vspace{-40pt}\begin{minipage}{\linewidth}
+			\begin{flushright}
 				\begin{tabular}{rc}
-					Durham, UK                                                     & \faHome                                                       \\
-					\href{mailto:cv@stevenwaterman.uk}{cv@stevenwaterman.uk}           & \href{mailto:cv@stevenwaterman.uk}{\faEnvelope}                 \\
+					\href{https://en.wikipedia.org/wiki/Durham,_England}{Durham, UK} & \href{https://en.wikipedia.org/wiki/Durham,_England}{\faHome} \\
+					\href{mailto:cv@stevenwaterman.uk}{cv@stevenwaterman.uk} & \href{mailto:cv@stevenwaterman.uk}{\faEnvelope} \\
+					\href{http://www.stevenwaterman.uk}{stevenwaterman.uk} & \href{http://www.stevenwaterman.uk}{\faLink} \\
+					&\\
 					\href{https://www.linkedin.com/in/steven-waterman/}{steven-waterman} & \href{https://www.linkedin.com/in/steven-waterman/}{\faLinkedin} \\
-					\href{https://github.com/stevenwaterman}{StevenWaterman}       & \href{https://github.com/stevenwaterman}{\faGithub}           \\
-					\href{https://twitter.com/SteWaterman}{SteWaterman}       & \href{https://twitter.com/SteWaterman}{\faTwitter}           \\
-					\href{http://www.stevenwaterman.uk}{stevenwaterman.uk}             & \href{http://www.stevenwaterman.uk}{\faLink}                    \\
-				\end{tabular} \\
-				
-				\vspace{4pt}
-				
-				\begin{minipage}{0.9\linewidth}
-					\begin{center}
-						\begin{Large}
-							\textbf{Summary}
-						\end{Large}
-					\end{center}
-				
-					\vspace{-8pt}
-					
-					Full-Stack Developer at Scott Logic
-					
-					\vspace{8pt}
-					
-					Self-directed, efficient generalist, able to quickly learn new technologies with a desire to work on challenging problems
-					
-					\vspace{8pt}
-					
-					Creative, unorthodox, innovative. Able to think outside the box to find the best solution
-					
-					\vspace{8pt}
-					
-					Thought leader, giving frequent tech talks and maintaining an active blogging presence
-					
-					\vspace{8pt}
-					
-					Back-end and Data Infrastructure focus. While I'm happy to work on the behind-the-scenes of front-end, this CV is my artistic peak!
-					
-					\vspace{4pt}
-					
-					\begin{center}
-						\begin{Large}
-							\textbf{Career Interests}
-						\end{Large}
-					\end{center}
-				
-					\vspace{-8pt}
-					
-					Startups and small teams with flat hierarchy, in North-East England or (ideally) Remote.
-					
-					\vspace{8pt}
-					
-					It's essential that I have the space and freedom to develop my skills and learn new technologies.
-			
-					\begin{center}
-						\begin{Large}
-							\textbf{Skills}
-						\end{Large}
-					\end{center}
-				
-				\vspace{-8pt}
-				\emph{I am the go-to guy regarding:}
-				
-				\darktech{Java} \darktech{TypeScript} \darktech{SQL} \darktech{Svelte} \darktech{Excel}
-				
-				\emph{I can teach beginners about:}
-				
-				\darktech{Python} \darktech{Kotlin} \darktech{JS} \darktech{C\#} \darktech{NodeJS} \darktech{R} \darktech{LaTeX}  \darktech{NoSQL} \darktech{AWS CDK}
-								
-				\vspace{8pt}
-				
-				\end{minipage}
-			
-				\vspace{8pt}
-			\end{center}
+					\href{https://twitter.com/SteWaterman}{SteWaterman} & \href{https://twitter.com/SteWaterman}{\faTwitter} \\
+					\href{https://github.com/stevenwaterman}{StevenWaterman} & \href{https://github.com/stevenwaterman}{\faGithub}
+				\end{tabular}
+			\end{flushright}
 		\end{minipage}
-	}
-	\hspace{0.02\textwidth}
-	\begin{minipage}{0.58\textwidth}	
-		
-		\sectionheader{Experience}
-		
-		\begin{sectionitem}
-			Aug 2019&\textbf{Developer}\\
-			\emph{Newcastle}& Scott Logic\\ \\
-			
-			\textbf{NHS Digital}&\begin{bullets} 
-				\smitem{\textbf{Covid 19 Shielding Patients List}}
-				\smitem{Migrating SQL process to DataBricks}
-				\smitem{Small team augmenting NHS developers}
-				\smitem{Advised senior leadership on how to implement best practices, demonstrating a proof-of-concept DataBricks CI pipeline}
-				\smitem{Paired with \& handed over to NHS developers, allowing them to complete the migration alone}
-				\smitem{Managed all aspects of the project for a period, reporting to key stakeholders and coordinating the response to a production failure}
-			\end{bullets}\\ \\
-			
-			\textbf{NatWest Bank}&\begin{bullets} 
-				\smitem{\textbf{Invoice Financing platform with FX capabilities}}
-				\smitem{Designed and implemented service-service authentication and data auditing functionality}
-				\smitem{Organised and ran knowledge transfer sessions}
-				\smitem{Mentored junior developers}
-				\smitem{Facilitated the first all-remote retrospective}
-			\end{bullets}\\ \\
-				
-			\textbf{Grad Project}& \begin{bullets}
-				\smitem{\textbf{Twitter-like equities research platform}}
-				\smitem{Mobile-first web application}
-				\smitem{Automatic cloud deployment with AWS CDK}
-				\smitem{Data storage using both SQL and NoSQL}
-			\end{bullets}\\ \\
-			
-			\textbf{Thought Leadership}&\begin{bullets}
-				\smitem{I am \href{https://blog.scottlogic.com/swaterman/}{very active on the Scott Logic blog}, discussing topics from \href{https://blog.scottlogic.com/2020/02/17/minesweeper-optimisation.html}{web optimisation} in Svelte to \href{https://blog.scottlogic.com/2020/01/29/typescript-pick-n-mix.html}{type-level programming}} in TypeScript
-				\smitem{\href{https://www.youtube.com/channel/UCthWn69cyB5xKONW9zMQ7rg}{I regularly give tech talks}}
-			\end{bullets}\\ \\
-		\end{sectionitem}
-		
-%		\begin{sectionitem}
-%			Oct 2018 ---&\textbf{Lab Demonstrator}\\
-%			Jun 2019& Durham University\\
-%			\emph{Durham}& \begin{bullets}
-%				\smitem{Ran practical work sessions for students}
-%				\smitem{Covered: Digital Logic, Machine Architecture, Operating Systems, Databases, and Networks}
-%			\end{bullets}\\
-%		\end{sectionitem}
-%	
-%		\vspace{4pt}
-		
-		\begin{sectionitem}
-			July ---&\textbf{Junior Software Engineer (Internship)}\\
-			Oct 2018& \href{https://www.condecoconnect.com/}{Condeco Group Ltd.}\\
-			\emph{Newcastle}& \begin{bullets}
-				\smitem{Full-Stack web development with microservices}
-				\smitem{Focus on backend API development}
-%				\smitem{Designed and pitched a new microservice}
-			\end{bullets}\\
-		\end{sectionitem}
-		
-%		\begin{sectionitem}			
-%			March ---&\textbf{Full Stack Developer}\\
-%			May 2017&\href{http://planforprobate.com/}{Plan for Probate (North) Ltd.}\\
-%			\emph{Co. Durham}&\begin{bullets}
-%				\smitem{Developed an online CRM portal tracking payments and customer information}
-%				\smitem{Employed an Agile approach to keep clients informed throughout the consulting process}
-%			\end{bullets}\\
-%		\end{sectionitem}
-		
-%		\begin{sectionitem}
-%			July ---&\textbf{Java Programmer}\\
-%			Oct 2016&\href{https://www.facebook.com/tripefactory.sunderland/}{E. Hall Tripe \& Poultry Ltd.}\\
-%			\emph{Sunderland}&\begin{bullets}
-%				\smitem{Developed a logistics system which creates packing lists for the drivers, and calculates delivery routes, previously done manually}
-%			\end{bullets}\\
-%			&\tech{Java} \tech{Swing} \tech{SQL}\\
-%		\end{sectionitem}
-		
-%		\begin{sectionitem}
-%			2013 --- 2017&\textbf{Data Analyst}\\
-%			&\begin{bullets}
-%				\smitem{Created data analysis tools which produce data and graphs used in product brochures}
-%			\end{bullets}\\
-%			&\tech{Java} \tech{SQL} \tech{Excel} \tech{VBA}\\
-%		\end{sectionitem}
+	\end{tabular}
 
-		\sectionheader{Education}
+	\vspace{12pt}
+
+	\begin{Large}Experience\end{Large}
+	\rule{200pt}{1pt}\\
+	
+	\vspace{-2pt}
+	
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{Senior Developer @ \href{https://www.nhsbsa.nhs.uk/}{NHS BSA}} & \textbf{Nov 2020 --- Present}
+	\end{tabularx}\vspace{2pt}
+
+	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
+		I'm a full stack developer working on the new NHS Jobs, a public-facing Government service.
+		That means accessibility is paramount, meeting WCAG AAA and supporting progressive enhancement for users without Javascript.
+		We can't release an update with known a11y issues.\\
 		
-		\begin{sectionitem}
-			&\textbf{\href{https://www.dur.ac.uk/}{Durham University}} (\href{https://www.dur.ac.uk/trevelyan.college/}{Trevelyan College})\\
-			2016 --- 2019&\href{https://www.dur.ac.uk/courses/info/?id=11509\&title=Computer+Science\&code=G400\&type=BSC\&year=2016}{BSc Computer Science}\\
-			&\begin{bullets}
-				\smitem{1st Class (Hons)}
-			\end{bullets}\\
-			2015 --- 2016&\href{https://www.dur.ac.uk/courses/info/?id=11558\&title=General+Engineering\&code=H100\&type=MENG\&year=2015}{MEng General Engineering}\\
-			&\begin{bullets}
-				\smitem{Changed course after a CS elective module} 
-			\end{bullets}\\
-		\end{sectionitem}
+		I perform a wide range of work, from fixing accessibility in CSS to improving performance by tweaking SQL.
+		Everything I do is focussed on adding value for users, either directly through my own work or indirectly by helping others. A day could involve observing user research, working with designers and POs to effectively meet user needs, or mentoring junior developers.\\
 		
-		\sectionheader{Accomplishments}
+		Between tickets, I have a personal focus on developer experience and tooling.
+		Shortly after joining, I set up Docker Compose for local development and onboarded the team, meaning nobody is running 15 microservices manually any more.
+		I also refactored our frontend integration tests, creating a custom DSL that makes it easier to do things right.\\
 		
-		\vspace{4pt}
-		
-		\begin{bullets}
-			\smitem{My blogs are at the top of many \href{https://www.google.com/search?q=java+dto}{google searches (click)}}
-			\smitem{Won the \href{https://durhack.com}{Durhack 2018} `GitHub Prize for Best Dev Tool' \& overall runner-up with \href{https://github.com/stevenwaterman/sharpshot}{\emph{SharpShot}}, an esoteric visual programming language}
-%			\smitem{BAE Systems \emph{Capture the Flag} Runner-Up 2017}
-%			\smitem{\href{https://github.com/stevenwaterman}{Active GitHub account, contributing to FOSS}}
-			
-			\smitem{Chaired the committee that governs extracurricular student groups, \href{https://www.thebubble.org.uk/current-affairs/student-life/motion-voted-down-by-outraged-assembly/}{successfully campaigning for more student consultation}}
-%			\smitem{Represented over 4,000 students as Science Faculty Rep, speaking publicly and lobbying senior leadership regarding student issues}
-%			\smitem{Held leadership positions in five student groups \& president of two}
-			
-			\smitem{Actively involved with \href{http://community.dur.ac.uk/dur.improv/}{Shellshock! Improvised Comedy}, performing in a \href{https://www.thespaceuk.com/shows/2018/here-be-improv/}{sell-out show at Edinburgh Fringe in 2018}}
-			\smitem{\href{https://i.imgur.com/4Uz2USm.jpg}{I made a super cool electric bike (click)}}
-		\end{bullets}
+		I constantly push for more communication between functions, talking to everyone involved and bridging the gaps between them.
+		I ran retrospectives with a focus on action, making them something more than a place to vent and giving the team ownership over our ways of working.\\
 	\end{minipage}
 	
-	\newpage
 	
-	\vspace*{12pt}
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{Developer @ \href{https://www.scottlogic.com/}{Scott Logic}} & \textbf{Aug 2019 --- Oct 2020}
+	\end{tabularx}\vspace{2pt}
 	
-	\begin{center}
-		\Huge \textbf{Portfolio}
-	\end{center}
-	
-	\hspace{0.02\textwidth}
-	\begin{minipage}{0.40\textwidth}
-		\begin{center}
-			\href{http://www.stevenwaterman.uk/musetree/}{\includegraphics[width=0.9\linewidth]{musetree.png}}
-		\end{center}
-		\href{http://www.stevenwaterman.uk/musetree/}{\textbf{MuseTree} (Jan 2020 - Present)}
+	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
+		As a consultant I worked on a number of demanding projects, often expected to pick up new languages, technologies, or business domains, and be able to contribute within a few days.\\
 		
-		A custom front-end for \href{https://openai.com/blog/musenet/}{MuseNet}, an AI music generator.
-		Improves on the official MuseNet tool, turning a toy into something that can be used by creators in real-world scenarios.
-		Successful open-source project, seeing frequent use in and contributions from the FOSS community.
-		Latest update adds integration with the Web Audio API to perform real-time audio synthesis in-browser.
+		As the COVID-19 pandemic set in, I worked in a 2/3 person team advising NHS Digital on how to modernise the data pipeline feeding the Shielding Patients List.
+		We architected and oversaw the in-place migration from complex SQL queries to a Databricks cluster, ran detailed knowledge transfer sessions, and advised senior leadership on best practices for Data and DevOps.\\
 		
-		\tech{Svelte} \tech{TypeScript} \tech{Web Audio}
-				
-		\begin{center}
-			\href{http://www.dsurooms.com}{\includegraphics[width=0.7\linewidth]{dsurooms.png}}
-		\end{center}
-		\href{http://www.dsurooms.com}{\textbf{DSUrooms.com} (Jan 2018)}
-		
-		Created during my role in Student Group Governance, showing when rooms in the Students' Union were booked. Hosted in the cloud using a scraping API created with nodejs. Received very positive feedback from Student Groups, as previously there was no way to know which rooms were booked. The tool was successfully handed over to SU staff and is integrated into the official website.
-		
-		\tech{NodeJS} \tech{FullCalendar} \tech{Javascript} \tech{JQuery}
-
-		
+		Other projects saw me create inter-service authentication and data auditing functionality,
+		transition our ways of working to the new all-remote reality, run the first remote retro, and set up continuous deployment with AWS CDK, including data storage bridging both SQL and NoSQL.\\
 	\end{minipage}
-	\hspace{0.06\textwidth}
-	\begin{minipage}{0.40\textwidth}	
-		
-		\begin{center}
-			\href{https://github.com/stevenwaterman/sharpshot}{\includegraphics[width=0.9\linewidth]{sharpshot.png}}
-		\end{center}
-		\vspace{-12pt}
-		\href{https://github.com/stevenwaterman/sharpshot}{\textbf{SharpShot} (Oct 2018)}
-		
-		Initial version created in 24 hours for \href{http://www.durhack.com}{Durhack 2018}. A visual, esoteric programming language where nodes are placed on a grid. Each node represents a function, and parameters move around the screen annihilating each other when they collide. SharpShot was the overall runner-up from 31 total projects, and won the GitHub prize for best Dev Tool. Work continued in 2019 to convert it into a Zachtronics-esque programming game.
-		
-		\tech{Java} \tech{Kotlin} \tech{Javafx}
 
-		\begin{center}
-			\includegraphics[width=0.9\linewidth]{backtest.png}
-		\end{center}
-		\vspace{-12pt}
-		\textbf{Autocall Backtester} (March 2016)
-		
-		Created for Lowes Financial Management. Tests a financial product to see how it would have performed historically. This tool allowed the analysis to be performed where previously it was too time consuming. The graphs produced are used in the official product literature and online. The tool also informed the creation of new products, where backtesting revealed them to perform better than expected.
-		
-		\tech{Java} \tech{Excel} \tech{VBA}
-		
+
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{Junior Software Engineer @ \href{https://www.condecoconnect.com/}{Codeco}} & \textbf{Jul 2018 --- Oct 2018}
+	\end{tabularx}\vspace{2pt}
+
+	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
+		As an intern working on the backend API, the microservice architecture used at Condeco was completely new to me.
+		I spent a few months learning and getting up to speed, culminating in me conceiving, architecting, and pitching a new licencing microservice to technical leadership.
 	\end{minipage}
-	\hspace{0.02\textwidth}
+	
+	\begin{Large}Education\end{Large}
+	\rule{200pt}{1pt}\\
+	
+	
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{\href{https://www.dur.ac.uk/courses/info/?id=11509\&title=Computer+Science\&code=G400\&type=BSC\&year=2016}{BSc Computer Science} @ Durham University (1st Class Hons.)} & \textbf{2016 --- 2019}
+	\end{tabularx}\vspace{2pt}
+
+	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
+		Dissertation title: \emph{Tailoring horror games with biosignals}\\
+	\end{minipage}
+
+	
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{\href{https://www.dur.ac.uk/courses/info/?id=11558\&title=General+Engineering\&code=H100\&type=MENG\&year=2015}{MEng General Engineering} @ Durham University} & \textbf{2015 --- 2016}
+	\end{tabularx}\vspace{2pt}
+
+	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
+		I always wanted to work in tech, but an elective CS module convinced me to change course\\
+	\end{minipage}
+
+	
+	\vspace{8pt}
+	\begin{Large}Other Work\end{Large}
+	\rule{200pt}{1pt}\\
+	
+	
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{Thought Leadership} & \textbf{Constantly!}
+	\end{tabularx}\vspace{2pt}
+	
+	\hspace{0.05\linewidth}\begin{tabularx}{0.95\linewidth}{Xr}
+		\begin{minipage}{\linewidth}
+			I'm a seasoned speaker at local tech talks, including that time I threw chocolates at \href{https://www.youtube.com/watch?v=2ibiA5TEsxw}{NE:Tech} and the time I live-coded an underwhelming website with \href{https://svelte.dev}{Svelte} at \href{https://www.youtube.com/watch?v=P6u0Uv_VxCU}{NE-RPC}.
+			I've written many \href{https://stevenwaterman.uk/}{blogs}, including my descent into \href{https://blog.scottlogic.com/2020/10/09/ergo-rabbit-hole.html}{ergo-keyboard madness} that went viral and ended up on the \href{https://news.ycombinator.com/item?id=24728224}{HN front page}.
+			I've also made regular appearances in \href{https://www.baeldung.com/java-weekly-315}{Java Weekly} with technical blogs like \href{https://blog.scottlogic.com/2020/01/03/rethinking-the-java-dto.html}{Rethinking the Java DTO}.
+		\end{minipage} & \href{https://blog.scottlogic.com/2020/10/09/ergo-rabbit-hole.html}{\includegraphics[align=c, width=0.36\textwidth]{keyboard}}
+	\end{tabularx}
+
+	\vspace{24pt}
+	
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{Narration.studio} (\href{https://narration.studio/}{Live}) (\href{https://github.com/stevenwaterman/narration.studio/}{GitHub}) & \textbf{Oct 2020}
+	\end{tabularx}\vspace{2pt}
+
+	\hspace{0.05\linewidth}\begin{tabularx}{0.95\linewidth}{Xr}
+		\begin{minipage}{\linewidth}
+			When I narrated my ergo-keyboard blog post, it was a really tedious manual process.
+			That was no good, so I made Narration.studio: an in-browser narration editing tool using the web speech recognition API to be completely hands-free.
+			Read the lines of your script as they appear on screen, and redo a line by simply saying it again.
+			Narration.studio will detect it and overwrite the previous recording for that line.
+			Highlighted in the Dec 2020 \href{https://svelte.dev/blog/whats-new-in-svelte-december-2020}{Svelte Community Showcase}.
+		\end{minipage} & \href{https://narration.studio/}{\includegraphics[align=c, width=0.36\textwidth]{narrationstudio}}
+	\end{tabularx}
+	
+	\vspace{24pt}
+	
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{MuseTree} (\href{https://stevenwaterman.uk/musetree/}{Live}) (\href{https://github.com/stevenwaterman/musetree}{GitHub}) & \textbf{Jan 2020}
+	\end{tabularx}\vspace{2pt}
+	
+	\hspace{0.05\linewidth}\begin{tabularx}{0.95\linewidth}{Xr}
+		\begin{minipage}{\linewidth}
+			After falling in love with \href{https://openai.com/blog/musenet/}{MuseNet}, OpenAI's MIDI generator, I decided to make a custom front-end for it.
+			While the official tool is a simple toy demo, MuseTree is used by creators in real-world scenarios to create songs and jingles.
+			As a successful open-source project, it sees frequent contributions from the FOSS community.
+			Latest update adds integration with the Web Audio API to perform real-time audio synthesis in-browser.
+		\end{minipage} & \href{https://stevenwaterman.uk/musetree/}{\includegraphics[align=c, width=0.36\textwidth]{musetree}}
+	\end{tabularx}
+
+	\vspace{24pt}
+	
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{Sharpshot} (\href{https://github.com/stevenwaterman/sharpshot}{GitHub}) & \textbf{Dec 2018}
+	\end{tabularx}\vspace{2pt}
+	
+	\hspace{0.05\linewidth}\begin{tabularx}{0.95\linewidth}{Xr}
+		\begin{minipage}{\linewidth}
+				I created the initial version of Sharpshot in 24 hours for \href{http://www.durhack.com}{Durhack 2018}, winning the `GitHub Prize for Best Dev Tool' \& overall runner-up. It's an esoteric visual programming language where nodes are placed on a grid. Each node represents a function, and parameters move around the screen annihilating each other when they collide. An addictive Zachlike puzzle game.
+		\end{minipage} & \href{https://github.com/stevenwaterman/sharpshot}{\includegraphics[align=c, width=0.36\textwidth]{sharpshot}}
+	\end{tabularx}
 \end{document}
