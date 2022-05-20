@@ -4,10 +4,13 @@
 \usepackage[sfdefault,light]{roboto}
 \usepackage[none]{hyphenat}%Remove hyphenation
 \usepackage{fontawesome}
+\usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{tikz}
 \usepackage{graphbox}
+\usepackage{multicol}
+\usepackage{wrapfig}
 
  \hypersetup{
 	colorlinks=true,
@@ -20,167 +23,280 @@
 %No page numbering
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
+\setlength\multicolsep{0pt}
 
 \begin{document}
-	\begin{tabular}{p{0.65\textwidth}p{0.35\textwidth}}
-		\begin{minipage}{\linewidth}
-			\begin{Huge}Steven Waterman\end{Huge}
-			
-			\hspace{24pt}\begin{large}Senior Developer at NHS BSA\end{large}\\
-			
-			I'm a track-proven generalist, able to quickly learn new tech or languages and work across many domains.\\
-			
-			I can follow best practices, but know I'll need to think outside the box to build reliable solutions when `best practice' is impossible.\\
-			
-			I'm always happy to spend my time helping others, because in the end it's the users that win --- that's what matters.\\
-			
-			I'm really ambitious and need to be challenged, flourishing in small teams of brilliant people who will push me to be a better developer.
-		\end{minipage} & \vspace{-40pt}\begin{minipage}{\linewidth}
-			\begin{flushright}
-				\begin{tabular}{rc}
-					\href{https://en.wikipedia.org/wiki/Durham,_England}{Durham, UK} & \href{https://en.wikipedia.org/wiki/Durham,_England}{\faHome} \\
-					\href{mailto:cv@stevenwaterman.uk}{cv@stevenwaterman.uk} & \href{mailto:cv@stevenwaterman.uk}{\faEnvelope} \\
-					\href{http://www.stevenwaterman.uk}{stevenwaterman.uk} & \href{http://www.stevenwaterman.uk}{\faLink} \\
-					&\\
-					\href{https://www.linkedin.com/in/steven-waterman/}{steven-waterman} & \href{https://www.linkedin.com/in/steven-waterman/}{\faLinkedin} \\
-					\href{https://twitter.com/SteWaterman}{SteWaterman} & \href{https://twitter.com/SteWaterman}{\faTwitter} \\
-					\href{https://github.com/stevenwaterman}{StevenWaterman} & \href{https://github.com/stevenwaterman}{\faGithub}
-				\end{tabular}
-			\end{flushright}
-		\end{minipage}
-	\end{tabular}
 
-	\vspace{12pt}
+	
+	
+	\begin{Huge}Steven Waterman\end{Huge}
+	
+	\vspace{6pt}\hspace{120pt} \begin{large}Technical Coach\end{large}\\
+	
+	\begin{wraptable}{r}{5cm}
+		\vspace{-75pt}
+		\begin{tabular}{rc}
+			\href{https://en.wikipedia.org/wiki/Durham,_England}{Durham, UK} & \href{https://en.wikipedia.org/wiki/Durham,_England}{\faHome} \\
+			\href{mailto:cv@stevenwaterman.uk}{cv@stevenwaterman.uk} & \href{mailto:cv@stevenwaterman.uk}{\faEnvelope} \\
+			\href{http://www.stevenwaterman.uk}{stevenwaterman.uk} & \href{http://www.stevenwaterman.uk}{\faLink} \\
+			&\\
+			\href{https://www.linkedin.com/in/steven-waterman/}{steven-waterman} & \href{https://www.linkedin.com/in/steven-waterman/}{\faLinkedin} \\
+			\href{https://twitter.com/SteWaterman}{SteWaterman} & \href{https://twitter.com/SteWaterman}{\faTwitter} \\
+			\href{https://github.com/stevenwaterman}{StevenWaterman} & \href{https://github.com/stevenwaterman}{\faGithub}
+		\end{tabular}
+	\end{wraptable}
+	
+	I'm a problem solver at heart, motivated by finding things that could be better and improving them.
+	I believe in egoless programming, where we collectively own success and failure.
+	Together, we celebrate progress towards our shared vision, without trying to assign credit or blame.\\
 
-	\begin{Large}Experience\end{Large}
-	\rule{200pt}{1pt}\\
+	That's why I love helping everyone else work effectively by solving the problems in their way.
 	
-	\vspace{-2pt}
+%	\begin{multicols}{2}
+%		As a generalist, I quickly learn skills across many domains.
+%		I'm excited by elegant solutions, but when that's not an option, I can draw from other areas to find an 80\% solution.
+%		I use my experience to coach software teams towards technical excellence and transformative collaboration.\\
+%		
+%		Currently, I'm working on my own startup as a solo founder. It has been an incredible technical challenge and a real learning experience, but I've realised that I don't enjoy running all aspects of a business at once. I'm seeking new opportunities that let me focus on my strengths.\\
+%	\end{multicols}
 	
-	\begin{tabularx}{\linewidth}{X r}
-		\textbf{Senior Developer @ \href{https://www.nhsbsa.nhs.uk/}{NHS BSA}} & \textbf{Nov 2020 --- Present}
+	\vspace{24pt}
+	\begin{tabularx}{\textwidth}{@{}llXrr@{}}
+		\begin{Large}What I'm Looking For\end{Large}&
+		\rule{80pt}{1pt}&&
+		\rule{63pt}{1pt}&
+		\textbf{Role}
+	\end{tabularx}\\
+	
+	\begin{multicols}{2}
+		I want to work with a software team, coaching them towards best practices and more effective collaboration.
+		I'm happy to get my hands dirty and help write code, but it's a means to an end.\\
+		
+		I can't guarantee your project will be a success, but I can make sure that the next one is better.
+		My priority is ensuring we achieve long-term growth.\\
+		
+		A typical day might involve pair-programming, facilitating a retro, planning a mobbing session, and chatting with team members individually to understand how I can help them out.\\
+		
+		\emph{Technical Coach} is the best description of me, but I'm not picky. In your company, I might be a \emph{Lead Developer}, \emph{Scrum Master}, or even \emph{CTO}.\\
+	\end{multicols}
+
+	\begin{tabularx}{\textwidth}{@{}Xrr@{}}&
+		\rule{50pt}{1pt}&
+		\textbf{Culture}
+	\end{tabularx}\\
+
+	\begin{multicols}{2}
+		My ideal company is open and transparent, empowering people to fix the problems they see.
+		Groups of friends work together as a tight-knit team that is more than the sum of its parts.
+		We celebrate successes, and learn from failures.\\
+		
+		As a large part of my role is helping to \emph{create} that culture, I only have one real requirement.
+		Management \emph{must} see the value in building a culture of high-trust, collectivism, and psychological safety.
+		It can't be an uphill battle.
+	\end{multicols}
+
+
+	\vspace{24pt}
+	\begin{tabularx}{\textwidth}{@{}llXrr@{}}
+		\begin{Large}Skills\end{Large}&
+		\rule{80pt}{1pt}&&
+		\rule{63pt}{1pt}&
+		\textbf{Technical}
+	\end{tabularx}\\
+	
+	\begin{multicols}{2}
+		My core expertise is full-stack web development, from optimising a SQL query to automating deployments or making some CSS responsive.\\
+		
+		I love working on developer experience, and I'm your go-to for things like API design, complex type constraints, or cutting edge browser features.\\
+		
+		As a generalist, my most important skill is the ability to learn quickly by relying on my past experiences.
+		I can see similarities between tasks and apply knowledge from one area to another.\\
+		
+		When learning something new, I'll have a general overview within a few hours, and feel comfortable enough to contribute after a few days.\\
+		
+		I won't be an expert, but I'll know enough to work with experts.
+		There's too much to list, but here are some of the stranger things I've got up to:\\
+		
+		\begin{itemize}[noitemsep,topsep=0pt,partopsep=0pt]
+			\item \begin{small}Prototyping Electronics (CAD, 3D Printing)\end{small}
+			\item \begin{small}Logo Design (Vector / Rater Graphics)\end{small}
+			\item \begin{small}Creating 3D Animations (CGI, Video Editing)\end{small}
+			\item \begin{small}Making Background Audio (Music Production)\end{small}\\
+		\end{itemize}
+		
+	\end{multicols}
+
+	\begin{tabularx}{\textwidth}{@{}Xrr@{}}&
+		\rule{50pt}{1pt}&
+		\textbf{Soft Skills}
+	\end{tabularx}\\
+
+	\begin{multicols}{2}
+		Running my own startup means I understand the wider business context.
+		Tech and development may be my home, but I can have a productive chat about any aspect of the business.\\
+		
+		I'm an experienced speaker and technical writer, presenting at numerous meetups and regularly live-coding on Twitch. My tech blog has a small following, with a few viral hits.\\
+	\end{multicols}
+	
+	\newpage
+	
+	\begin{tabularx}{\textwidth}{@{}llXrr@{}}
+		\begin{Large}Career History\end{Large}&
+		\rule{80pt}{1pt}&&&
+	\end{tabularx}\\
+	
+	\begin{tabularx}{\linewidth}{@{}Xr@{}}
+		\textbf{Founder @ \href{https://www.lexoral.com/}{Lexoral}} & \textbf{May 2021 --- Present}
 	\end{tabularx}\vspace{2pt}
 
-	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
-		I'm a full stack developer working on the new NHS Jobs, a public-facing Government service.
-		That means accessibility is paramount, meeting WCAG AAA and supporting progressive enhancement for users without Javascript.
-		We can't release an update with known a11y issues.\\
+	\begin{multicols}{2}
+		After watching my partner struggle to transcribe their PhD interviews, I founded Lexoral.
+		We give you an AI \emph{assistant} that transcribes the easy bits for you, asking for help when it's not sure.\\
 		
-		I perform a wide range of work, from fixing accessibility in CSS to improving performance by tweaking SQL.
-		Everything I do is focussed on adding value for users, either directly through my own work or indirectly by helping others. A day could involve observing user research, working with designers and POs to effectively meet user needs, or mentoring junior developers.\\
+		I ran all aspects of the business, from design to development, accounting to marketing.
+		Lexoral closed out 2021 by joining the \href{https://dcincubator.co.uk/}{\textbf{Durham City Incubator}}, an intensive 6-month program.\\
 		
-		Between tickets, I have a personal focus on developer experience and tooling.
-		Shortly after joining, I set up Docker Compose for local development and onboarded the team, meaning nobody is running 15 microservices manually any more.
-		I also refactored our frontend integration tests, creating a custom DSL that makes it easier to do things right.\\
+		I've discovered how much I didn't know before, getting real experience interviewing users, designing a marketing strategy, and building a meaningful value prop based on the things customers actually cared about.\\
 		
-		I constantly push for more communication between functions, talking to everyone involved and bridging the gaps between them.
-		I ran retrospectives with a focus on action, making them something more than a place to vent and giving the team ownership over our ways of working.\\
-	\end{minipage}
-	
-	
-	\begin{tabularx}{\linewidth}{X r}
-		\textbf{Developer @ \href{https://www.scottlogic.com/}{Scott Logic}} & \textbf{Aug 2019 --- Oct 2020}
+		After hearing concerns about data security, I embraced a philosophy of radical transparency.
+		To prove that we weren't hiding anything, Lexoral went \href{https://github.com/stevenwaterman/Lexoral/}{\textbf{open-source}} with public CD pipelines, and most of it was written live on \href{https://twitch.tv/lexoral}{\textbf{Twitch}}.\\
+		
+		Lexoral was a crash-course in cloud-native development.
+		Everything is serverless, clients talk to firebase \href{https://lexoral.com/blog/svelte-firestore-binding/}{\textbf{directly}}, and \href{https://twitter.com/SteWaterman/status/1445041856023339011}{\textbf{one part of the pipeline}} runs on over 1000 instances in parallel (per user!).\\
+		
+		I still believe that Lexoral can be successful.
+		It has a niche, and solves a real need.
+		However, running a pre-seed startup alone is not for me.
+		Sadly, it's time to move on and refocus on my strengths.\\
+		
+	\end{multicols}
+
+
+	\begin{tabularx}{\linewidth}{@{}Xr@{}}
+		\textbf{Senior Developer @ \href{https://www.nhsbsa.nhs.uk/}{NHS BSA}} & \textbf{Nov 2020 --- May 2021}
 	\end{tabularx}\vspace{2pt}
 	
-	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
-		As a consultant I worked on a number of demanding projects, often expected to pick up new languages, technologies, or business domains, and be able to contribute within a few days.\\
+	\begin{multicols}{2}
+		Shocked at the poor developer experience caused by outdated tooling and organisational barriers, I made it my mission to resolve those issues.
+		Seeing people run 15 microservices by hand, I moved development to containers and onboarded the team.
+		After spending half an hour setting up test data, I refactored our frontend integration tests, creating a custom DSL that makes it trivial.\\
 		
-		As the COVID-19 pandemic set in, I worked in a 2/3 person team advising NHS Digital on how to modernise the data pipeline feeding the Shielding Patients List.
-		We architected and oversaw the in-place migration from complex SQL queries to a Databricks cluster, ran detailed knowledge transfer sessions, and advised senior leadership on best practices for Data and DevOps.\\
-		
-		Other projects saw me create inter-service authentication and data auditing functionality,
-		transition our ways of working to the new all-remote reality, run the first remote retro, and set up continuous deployment with AWS CDK, including data storage bridging both SQL and NoSQL.\\
-	\end{minipage}
+		I constantly pushed for more communication between functions and ran action-focussed retros, making it more than just a place to vent and giving the team ownership over our ways of working.
+		Since leaving, they have adopted some of my more radical ideas, including a complete restructuring of the project to de-silo the teams and allow people to self-organise.\\
+	\end{multicols}
 
-
-	\begin{tabularx}{\linewidth}{X r}
-		\textbf{Junior Software Engineer @ \href{https://www.condecoconnect.com/}{Codeco}} & \textbf{Jul 2018 --- Oct 2018}
+	\begin{tabularx}{\linewidth}{@{}Xr@{}}
+		\textbf{Consultant Developer @ \href{https://www.scottlogic.com/}{Scott Logic}} & \textbf{Aug 2019 --- Oct 2020}
 	\end{tabularx}\vspace{2pt}
+	
+	\begin{multicols}{2}
+		I worked on a number of demanding projects, often expected to pick up new languages, technologies, or business domains, and be able to contribute within a few days.\\
+		
+		As the COVID-19 pandemic set in, I worked in a trio advising NHS Digital on how to rearchitect the data pipeline feeding the Shielding Patients List.
+		We planned and oversaw the in-place migration from complex SQL queries to a Databricks cluster, ran detailed knowledge transfer sessions with NHS devs, and advised senior leadership on how to prevent similar situations in future.\\
+		
+		Prior to that, I worked on an upcoming product for a multinational bank, and a Twitter-like equities research platform.
+		I have always been drawn to developer-facing improvements, working on projects like inter-service authentication, data auditing, and continuous deployment pipelines.\\
+		
+		Throughout my time at Scott Logic, I actively pushed to improve our ways of working.
+		I ran retros and knowledge-sharing sessions to help integrate with client development teams.
+		To make sure there was a lasting record to learn from, I documented the decisions we made in a wiki.\\
+	\end{multicols}
 
-	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
-		As an intern working on the backend API, the microservice architecture used at Condeco was completely new to me.
-		I spent a few months learning and getting up to speed, culminating in me conceiving, architecting, and pitching a new licencing microservice to technical leadership.
-	\end{minipage}
-	
-	\begin{Large}Education\end{Large}
-	\rule{200pt}{1pt}\\
+	\vspace{24pt}
+	\begin{tabularx}{\textwidth}{@{}llXrr@{}}
+		\begin{Large}Education\end{Large}&
+		\rule{80pt}{1pt}&&&
+	\end{tabularx}\\
 	
 	
-	\begin{tabularx}{\linewidth}{X r}
+	\begin{tabularx}{\linewidth}{@{}Xr@{}}
 		\textbf{\href{https://www.dur.ac.uk/courses/info/?id=11509\&title=Computer+Science\&code=G400\&type=BSC\&year=2016}{BSc Computer Science} @ Durham University (1st Class Hons.)} & \textbf{2016 --- 2019}
 	\end{tabularx}\vspace{2pt}
 
-	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
-		Dissertation title: \emph{Tailoring horror games with biosignals}\\
-	\end{minipage}
+	Dissertation title: \emph{Tailoring horror games with biosignals}\\
 
-	
-	\begin{tabularx}{\linewidth}{X r}
-		\textbf{\href{https://www.dur.ac.uk/courses/info/?id=11558\&title=General+Engineering\&code=H100\&type=MENG\&year=2015}{MEng General Engineering} @ Durham University} & \textbf{2015 --- 2016}
+	\begin{tabularx}{\linewidth}{@{}Xr@{}}
+		\textbf{\href{https://www.dur.ac.uk/courses/info/?id=11558\&title=General+Engineering\&code=H100\&type=MENG\&year=2015}{MEng General Engineering} @ Durham University (Certificate)} & \textbf{2015 --- 2016}
 	\end{tabularx}\vspace{2pt}
 
-	\hspace{0.05\linewidth}\begin{minipage}{0.95\linewidth}
-		I always wanted to work in tech, but an elective CS module convinced me to change course\\
-	\end{minipage}
+	Changed course after taking an elective CS module.
+	A year of Engineering is surprisingly handy!
+	
+	\newpage
+	
+	\begin{tabularx}{\textwidth}{@{}llXrr@{}}
+		\begin{Large}Other Work\end{Large}&
+		\rule{80pt}{1pt}&&
+		\rule{63pt}{1pt}&
+		\textbf{Writing}
+	\end{tabularx}\\
+
+	I've written for many tech blogs over the years. Here are a few of my highlights:
+
+	\begin{itemize}
+		\item \begin{small}\href{https://lexoral.com/blog/you-dont-need-js/}{\textbf{5 things you don't need Javascript for}} - A tour of some lesser-known HTML and CSS features that let you create sleek websites without JS, from animated diagrams to dark mode.\end{small}
+		
+		\item \begin{small}\href{https://lexoral.com/blog/svelte-firestore-binding/}{\textbf{Database sync like magic, with Svelte + Firestore}} - Discussing Lexoral's data layer, built from first principles.\end{small}
+		
+		\item \begin{small}\href{https://blog.scottlogic.com/2020/10/09/ergo-rabbit-hole.html}{\textbf{Down the ergonomic keyboard rabbit hole}} - The story of how I ended up with \href{https://blog.scottlogic.com/swaterman/assets/ergo-rabbit-hole/layer0.png}{\textbf{such}} a weird \href{https://ergodox-ez.com/}{\textbf{keyboard}}.\end{small}
+		
+		\item \begin{small}\href{https://blog.scottlogic.com/2020/01/03/rethinking-the-java-dto.html}{\textbf{Rethinking the Java DTO}} - Exploring how we added extra type constraints onto our DTOs using Lombok, making them more flexible and more resistant to runtime errors. Featured in \href{https://www.baeldung.com/java-weekly-315}{\textbf{Java Weekly}}.\end{small}
+	\end{itemize}
+	
+	\begin{tabularx}{\textwidth}{@{}Xrr@{}}&
+		\rule{50pt}{1pt}&
+		\textbf{Speaking}
+	\end{tabularx}\\
+
+	I'm a seasoned speaker, and have given a number of tech talks at local meetups, including:
+	
+	\begin{itemize}
+		\item \begin{small}\href{https://www.youtube.com/watch?v=2ibiA5TEsxw}{\textbf{NE:Tech}} - Where I talked about Minesweeper and threw chocolates at people.\end{small}
+		
+		\item \begin{small}\href{https://www.youtube.com/watch?v=P6u0Uv_VxCU}{\textbf{NE-RPC}} - Where I live-coded a website from scratch in Svelte.\end{small}
+		
+		\item \begin{small}\href{https://www.twitch.tv/stewaterman}{\textbf{Twitch}} - Where I regularly live-code my projects (mixed with some games).\end{small}
+	\end{itemize}
+
 
 	
-	\vspace{8pt}
-	\begin{Large}Other Work\end{Large}
-	\rule{200pt}{1pt}\\
-	
-	
-	\begin{tabularx}{\linewidth}{X r}
-		\textbf{Thought Leadership} & \textbf{Constantly!}
-	\end{tabularx}\vspace{2pt}
-	
-	\hspace{0.05\linewidth}\begin{tabularx}{0.95\linewidth}{Xr}
-		\begin{minipage}{\linewidth}
-			I'm a seasoned speaker at local tech talks, including that time I threw chocolates at \href{https://www.youtube.com/watch?v=2ibiA5TEsxw}{NE:Tech} and the time I live-coded an underwhelming website with \href{https://svelte.dev}{Svelte} at \href{https://www.youtube.com/watch?v=P6u0Uv_VxCU}{NE-RPC}.
-			I've written many \href{https://stevenwaterman.uk/}{blogs}, including my descent into \href{https://blog.scottlogic.com/2020/10/09/ergo-rabbit-hole.html}{ergo-keyboard madness} that went viral and ended up on the \href{https://news.ycombinator.com/item?id=24728224}{HN front page}.
-			I've also made regular appearances in \href{https://www.baeldung.com/java-weekly-315}{Java Weekly} with technical blogs like \href{https://blog.scottlogic.com/2020/01/03/rethinking-the-java-dto.html}{Rethinking the Java DTO}.
-		\end{minipage} & \href{https://blog.scottlogic.com/2020/10/09/ergo-rabbit-hole.html}{\includegraphics[align=c, width=0.36\textwidth]{keyboard}}
-	\end{tabularx}
+	\begin{tabularx}{\textwidth}{@{}Xrr@{}}&
+		\rule{50pt}{1pt}&
+		\textbf{Projects}
+	\end{tabularx}\\
 
-	\vspace{24pt}
+	I'm always working on something new, take a look at some of my side projects:
 	
-	\begin{tabularx}{\linewidth}{X r}
-		\textbf{Narration.studio} (\href{https://narration.studio/}{Live}) (\href{https://github.com/stevenwaterman/narration.studio/}{GitHub}) & \textbf{Oct 2020}
-	\end{tabularx}\vspace{2pt}
+	\begin{itemize}
+		\item \begin{small}\href{https://github.com/stevenwaterman/narration.studio}{\textbf{Narration.Studio}} - an in-browser narration editing tool using the web speech recognition API to be completely hands-free. Integrates with WebGL for high-performance waveform rendering. As a result of being built entirely with pre-release APIs, it no longer works. Looking back, this is the precursor to Lexoral.\end{small}
+		
+		\item \begin{small} \href{https://stevenwaterman.uk/musetree/}{\textbf{MuseTree}} (\href{https://github.com/stevenwaterman/musetree}{\textbf{Source}}) - A custom tree-based frontend for OpenAI's \href{https://openai.com/blog/musenet/}{\textbf{MuseNet}}, made for real music production workloads. I hand-wrote the instrument synthesisers you hear using the Web Audio API.\end{small}
+		
+		\item \begin{small}\href{https://github.com/stevenwaterman/NoTimeToStalk}{\textbf{No Time To Stalk}} - an experimental murder mystery game that was secretly multiplayer. Every action you take is recorded, and you become an NPC for the next player. How long until someone accuses you?\end{small}
+		
+		\item \begin{small}\href{https://github.com/stevenwaterman/sharpshot}{\textbf{Sharpshot}} - an esoteric visual programming language where data flies around a 2d grid and can collide in mid-air. Created for \href{http://www.durhack.com}{\textbf{Durhack 2018}}, winning the \emph{GitHub Prize for Best Dev Tool} and 2\textsuperscript{nd} place overall.\end{small}
+		
+		\item \begin{small}\href{https://linktr.ee/prevoid_art}{\textbf{Prevoid}} - An exploration into AI-generated art using CLIP-guided diffusion models.\end{small}
+		
+		\item \begin{small}\href{https://soundcloud.com/user-872603169/welcome-to-the-theatre}{\textbf{Soundcloud}} - A few samples of my music and remixes I've created.\end{small}
+	\end{itemize}
 
-	\hspace{0.05\linewidth}\begin{tabularx}{0.95\linewidth}{Xr}
-		\begin{minipage}{\linewidth}
-			When I narrated my ergo-keyboard blog post, it was a really tedious manual process.
-			That was no good, so I made Narration.studio: an in-browser narration editing tool using the web speech recognition API to be completely hands-free.
-			Read the lines of your script as they appear on screen, and redo a line by simply saying it again.
-			Narration.studio will detect it and overwrite the previous recording for that line.
-			Highlighted in the Dec 2020 \href{https://svelte.dev/blog/whats-new-in-svelte-december-2020}{Svelte Community Showcase}.
-		\end{minipage} & \href{https://narration.studio/}{\includegraphics[align=c, width=0.36\textwidth]{narrationstudio}}
-	\end{tabularx}
-	
-	\vspace{24pt}
-	
-	\begin{tabularx}{\linewidth}{X r}
-		\textbf{MuseTree} (\href{https://stevenwaterman.uk/musetree/}{Live}) (\href{https://github.com/stevenwaterman/musetree}{GitHub}) & \textbf{Jan 2020}
-	\end{tabularx}\vspace{2pt}
-	
-	\hspace{0.05\linewidth}\begin{tabularx}{0.95\linewidth}{Xr}
-		\begin{minipage}{\linewidth}
-			After falling in love with \href{https://openai.com/blog/musenet/}{MuseNet}, OpenAI's MIDI generator, I decided to make a custom front-end for it.
-			While the official tool is a simple toy demo, MuseTree is used by creators in real-world scenarios to create songs and jingles.
-			As a successful open-source project, it sees frequent contributions from the FOSS community.
-			Latest update adds integration with the Web Audio API to perform real-time audio synthesis in-browser.
-		\end{minipage} & \href{https://stevenwaterman.uk/musetree/}{\includegraphics[align=c, width=0.36\textwidth]{musetree}}
-	\end{tabularx}
 
-	\vspace{24pt}
+	\begin{tabularx}{\textwidth}{@{}Xrr@{}}&
+		\rule{50pt}{1pt}&
+		\textbf{Weird}
+	\end{tabularx}\\
+
+	It's always good to have a few fun facts to hand, so here are some of mine:
 	
-	\begin{tabularx}{\linewidth}{X r}
-		\textbf{Sharpshot} (\href{https://github.com/stevenwaterman/sharpshot}{GitHub}) & \textbf{Dec 2018}
-	\end{tabularx}\vspace{2pt}
-	
-	\hspace{0.05\linewidth}\begin{tabularx}{0.95\linewidth}{Xr}
-		\begin{minipage}{\linewidth}
-				I created the initial version of Sharpshot in 24 hours for \href{http://www.durhack.com}{Durhack 2018}, winning the `GitHub Prize for Best Dev Tool' \& overall runner-up. It's an esoteric visual programming language where nodes are placed on a grid. Each node represents a function, and parameters move around the screen annihilating each other when they collide. An addictive Zachlike puzzle game.
-		\end{minipage} & \href{https://github.com/stevenwaterman/sharpshot}{\includegraphics[align=c, width=0.36\textwidth]{sharpshot}}
-	\end{tabularx}
+	\begin{itemize}
+		\item I performed improvised comedy at the Edinburgh Fringe Festival.
+		
+		\item I built an electric bike that can do 50mph.
+		
+		\item I helped design a Robot Wars bot.
+		
+		\item I founded the Durham University Bureaucracy Society, with the aim of growing to the point that we were too bureacratic to have any spare time for recruitment. It only took 12 members.
+	\end{itemize}
 \end{document}
